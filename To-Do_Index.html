@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="To-Do_Style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+   
+        <div class="outerontainer">
+            <div class="container">
+                <!--===================== To do List Add Area  ===============    -->
+                <div class="row" style="margin-left: -7px;">
+    
+                    <div class="todo-icon">
+    
+                        <i class="fa-regular fa-file-lines"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="input-box" placeholder="Types your To-Do List ">
+                    </div>
+    
+                        <button id="todo-list-add-btn" onclick="addList()" ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></button>
+                </div>
+    
+                <div class="task-status">
+                    <span><i class="fa-regular fa-circle-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;Completed All Task</span>
+                    <span>Clear Completed</span>
+                </div>
+                <hr>
+        <!-- ====================   dynmic list item====================== -->
+                <ul id="list-container">
+                    
+                
+                </ul>
+                <hr>
+    <!-- ===================   Task Left Status Area ======================== -->
+                <div class="task-status">
+                    <span id="no-task"> 0 Task Left</span>
+                    <span> <span style="color: rgb(70, 70, 70);">All</span>  UnCompleted Task</span>
+                </div>
+                
+            </div>
+    
+    
+        </div>
+
+        <script src="To-Do_JS.js"></script>
+</body>
+</html>
