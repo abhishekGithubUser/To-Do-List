@@ -1,0 +1,161 @@
+
+    /* ================== font Famaliy apply to all==================== */
+    *{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+
+        background: linear-gradient(to left, rgb(4, 19, 40) , rgb(66, 22, 98),rgb(27, 27, 62));
+        mask-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+    }
+
+/*  ==========================      todo list outer Box               ===================== */
+.outerontainer{
+    width: 44vw;
+    margin-top: 150px;
+    padding: 20px ;
+    background-color: rgb(222, 211, 211);
+    border-radius: 10px;
+    box-shadow: 0 0 6px 8px rgb(17, 15, 37);
+}
+
+/*     ==================================          to do list containing box style     ======== */
+.container{
+    
+    font-size: 1.3rem;
+    padding-left: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    width: 40vw;
+    margin: auto;
+    padding: 20px ;
+    box-shadow: 0 0 6px 8px rgb(194, 180, 180);
+}
+/*  ===============================      To do List in put area=======================  */
+
+.row{
+    border-radius: 10px;
+    margin-left: -10px;
+    display: flex;
+    background-color: rgb(220, 213, 213);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0 0px 0;
+    height: 3rem;
+}
+.row:hover{
+    background-color: rgb(198, 184, 184);
+    color: rgba(129, 122, 122, 0.961);
+    z-index: -1;
+}
+.todo-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    z-index: 10;
+}
+/* ===========================   Input Box where the To Do list Name Type========================== */
+ input{
+    outline: none;
+    border: none;
+    opacity: 0.3;
+    background-color: inherit;
+    display: flex;
+    align-self:center;
+    font-size: 1rem;
+    font-weight: 525;
+    margin: 0;
+   
+}
+/* ==================================  Add Button to to do list ========================= */
+ button{
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 5px 15px 1px 0px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    
+    
+   
+
+}
+
+/* =============================== Task Status Area ============================ */
+.task-status{
+
+    color: lightgrey;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+
+}
+
+
+
+/* =========================           List Styling ============================== */
+
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    padding: 18px 8px 18px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    width: 88%;
+    margin:3px auto;
+    color: grey;
+    font-weight: 525;
+    background-color: rgba(15, 15, 14, 0.18);
+}
+
+/* ====================== ================ check box circal ponter to list checked list ======================== */
+ul li::after{
+    content: '';
+    position:absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%; 
+    border: 1px solid rgb(28, 28, 33);
+    background-size: cover;
+    background-position: center;
+    left: 15px;
+    top: 15px;
+    
+    
+}
+
+ul li.checked{
+    color: rgb(14, 14, 11);
+}
+ul li.checked::after {
+    content: '';
+    background-image: url("checked.png");
+
+}
+/* +===========================  Cosed button on TO DO list item=====================  */
+ul li span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(215, 13, 13);
+
+}
